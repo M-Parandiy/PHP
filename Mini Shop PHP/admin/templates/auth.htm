@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="templates/style.css" />
+    <script type="text/javascript" src="templates/jquery.js"></script>
+	<script type="text/javascript" src="templates/ckeditor/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="templates/ckeditor/AjexFileManager/ajex.js"></script>
+	<script type="text/javascript" src="templates/ckeditor/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="templates/ckeditor/AjexFileManager/ajex.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="content">
+            <div id="admin_auth">
+            {ERROR}
+            <form method="post">
+                <div class="formrow">
+                    <div class="name">Логин:</div>
+                    <div class="value"><input type="text" name="login" value="" /></div>
+                </div>
+                <div class="formrow">
+                    <div class="name">Пароль:</div>
+                    <div class="value"><input type="password" name="password" value="" /></div>
+                </div>
+                <input type="hidden" name="enter" value="yes" />
+                <div><input type="submit" value="Войти" class="butt2" /></div>
+            </form>
+            </div>
+        </div>
+        <footer id="footer">
+            
+        </footer>
+    </div>
+</body>
+</html>

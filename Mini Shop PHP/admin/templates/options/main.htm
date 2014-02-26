@@ -1,0 +1,120 @@
+<form method="post">
+    <div class="formrow">
+        <div class="name">Название сайта</div>
+        <div class="input"><input type="text" name="sitename" value="{SITENAME}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">E-mail администратора</div>
+        <div class="input"><input type="text" name="adminemail" value="{ADMINEMAIL}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Телефон</div>
+        <div class="input"><input type="text" name="adminphone" value="{ADMINPHONE}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Валюта</div>
+        <div class="input"><input type="text" name="curr" value="{CURR}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Главная SEO title</div>
+        <div class="input"><input type="text" name="homeseotitle" value="{HOMESEOTITLE}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Главная SEO keywords</div>
+        <div class="input"><input type="text" name="homeseokeywords" value="{HOMESEOKEYWORDS}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Главная SEO description</div>
+        <div class="input"><textarea name="homeseodescription">{HOMESEODESCRIPTION}</textarea></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Текст сверху на главной</div>
+        <div class="input"><textarea name="hometopdescr">{HOMETOPDESCR}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var hometopdescr = CKEDITOR.replace('hometopdescr');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: hometopdescr});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст внизу на главной</div>
+        <div class="input"><textarea name="homebottomdescr">{HOMEBOTTOMDESCR}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var homebottomdescr = CKEDITOR.replace('homebottomdescr');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: homebottomdescr});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст 1 в окне заказа</div>
+        <div class="input"><textarea name="text1buy">{TEXT1BUY}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var text1buy = CKEDITOR.replace('text1buy');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: text1buy});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст 2 в окне заказа</div>
+        <div class="input"><textarea name="text2buy">{TEXT2BUY}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var text2buy = CKEDITOR.replace('text2buy');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: text2buy});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст 3 в окне заказа</div>
+        <div class="input"><textarea name="text3buy">{TEXT3BUY}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var text3buy = CKEDITOR.replace('text3buy');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: text3buy});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст когда заказ завершен.</div>
+        <div class="input"><textarea name="text">{TEXT}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var text = CKEDITOR.replace('text');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: text});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст в окне заказа звонка.</div>
+        <div class="input"><textarea name="textcallback">{TEXTCALLBACK}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var textcallback = CKEDITOR.replace('textcallback');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: textcallback});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст когда звонок заказан.</div>
+        <div class="input"><textarea name="textcallbackdone">{TEXTCALLBACKDONE}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var textcallbackdone = CKEDITOR.replace('textcallbackdone');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: textcallbackdone});
+    </script>
+    <div class="formrow">
+        <div class="name">Информация о доставке.</div>
+        <div class="input"><textarea name="deliveryinfo">{DELIVERYINFO}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var deliveryinfo = CKEDITOR.replace('deliveryinfo');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: deliveryinfo});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст в подвале.</div>
+        <div class="input"><textarea name="textfooter">{TEXTFOOTER}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var textfooter = CKEDITOR.replace('textfooter');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: textfooter});
+    </script>
+    <div class="formrow">
+        <div class="name">Текст В Шапке.</div>
+        <div class="input"><textarea name="textinheader">{TEXTINHEADER}</textarea></div>
+    </div>
+    <script type="text/javascript">
+    var textinheader = CKEDITOR.replace('textinheader');
+    AjexFileManager.init({returnTo: 'ckeditor', editor: textinheader});
+    </script>
+    <input type="hidden" name="action" value="change" />
+    <div class="sbm"><input type="submit" value="Отправить" /></div>
+</form>

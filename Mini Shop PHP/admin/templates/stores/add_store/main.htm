@@ -1,0 +1,89 @@
+<form method="post" enctype="multipart/form-data">
+    <div class="formrow">
+        <div class="name">Название</div>
+        <div class="input"><input type="text" name="name" value="{STORENAME}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Видимый на страницах:</div>
+        <div class="input">
+            <input type="checkbox" name="visible" value="1" {CHECKVIS} />
+        </div>
+    </div>
+    <div class="formrow">
+        <div class="name">Локомотив:</div>
+        <div class="input">
+            <input type="checkbox" name="locomotiv" value="1" {CHECKLOC} />
+        </div>
+    </div>
+    <div class="formrow">
+        <div class="name">Категории:</div>
+        <div class="input">
+            {CAT}
+        </div>
+    </div>
+    <div class="formrow">
+        <div class="name">Сопутствующие товары:</div>
+        <div class="input">
+            {ADD}
+        </div>
+    </div>
+    <div class="formrow">
+        <div class="name">Краткое описание</div>
+        <div class="input"><textarea name="short_descr">{STORESHORTDESCR}</textarea></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Описание</div>
+        <div class="input"><textarea name="descr">{STOREDESCR}</textarea></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Цена</div>
+        <div class="input"><input type="text" name="price" value="{STOREPRICE}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Новая цена</div>
+        <div class="input"><input type="text" name="newprice" value="{STORENEWPRICE}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">SEO Title</div>
+        <div class="input"><input type="text" name="seotitle" value="{SEOTITLE}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">SEO Keywords</div>
+        <div class="input"><input type="text" name="seokeywords" value="{SEOKEYWORDS}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">SEO Description</div>
+        <div class="input"><textarea name="seodescription">{SEODESCRIPTION}</textarea></div>
+    </div>
+    {IMAGES}
+    <div id="store_images">
+        <div class="formrow">
+            <div class="name">Изображения в слайдере</div>
+            <div class="input">
+                <input type="file" name="image[]" accept="image/jpeg,image/png,image/gif" multiple />
+            </div>
+        </div>
+    </div>
+    <div id="store_images">
+        <div class="formrow">
+            <div class="name">Изображение товара</div>
+            <div class="input">
+                <img src="{IMAGELINK}" alt="" />
+                <input type="file" name="image_store" accept="image/jpeg" />
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="action" value="{ACTION}" />
+    <div class="sbm"><input type="submit" value="Отправить" /></div>
+</form>
+<script type="text/javascript">
+var editor = CKEDITOR.replace('descr');
+AjexFileManager.init({returnTo: 'ckeditor', editor: editor});
+</script>
+<script>
+    function DelStore(element)
+    {
+        if(confirm('Удалить изображение?'))
+        jQuery(element).parent().remove();
+    }
+</script>

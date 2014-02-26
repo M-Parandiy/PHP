@@ -1,0 +1,74 @@
+/* COMMON */
+html { height: 100%; }
+body { height: 100%; margin: 0px; padding: 0px; position: relative; font: 12px Tahoma; color: #000000; background: #FFFFFF url('../images/bg.jpg') no-repeat 50% 0; }
+td { font-size: 12px; }                                                                                     
+p, form { margin: 0px; padding: 0px; }
+h1 { padding: 0px; margin: 0px; font: bold 18px Arial; }
+h2 { padding: 0px; margin: 0px; font: bold 16px Arial; }
+select, option, input, textarea, button { font-size: 12px; font-family: Arial; vertical-align: middle; position: relative; color: #000000; }
+input:focus, textarea:focus { outline: none; }
+input[type="text"], input[type="password"], textarea { padding: 3px; border: 1px solid #D7D7D7; border-radius: 2px; }
+a { color: #2d4783; text-decoration: underline; }
+a:active { color: #FF9711; }
+a:hover { color: #FF9711; text-decoration: none; }
+img { border: 0px; vertical-align: middle; }
+ul { margin: 10px 0px; padding: 0px 0px 0px 14px; }
+ul li { margin: 0px 0px 3px 0px; padding: 0px; }
+label { cursor: pointer; }
+
+
+#page { width: 1000px; margin: 0 auto; }
+.clear { clear: both; }
+
+.left { width: 400px; float: left; margin-right: 20px; }
+.right { width: 580px; float: left; }
+/* COMMON */
+
+/* BUTTONS */
+.butt { display: inline-block; height: 20px; padding: 0 8px; font: 12px/20px Arial; background: #CB0606; color: #FFFFFF; text-decoration: none; }
+.butt:hover { background: #A70303; color: #FFFFFF; }
+.butt2 { display: inline-block; height: 24px; padding: 0 12px; font: 14px/24px Arial; background: #016CE6; color: #FFFFFF; text-decoration: none; border: 0; border-radius: 5px; cursor: pointer; }
+.butt2:hover { background: #A70303; color: #FFFFFF; }
+/* BUTTONS */
+
+/* HEADER */
+#header { height: 40px; margin-bottom: 20px; }
+#mainmenu { background: #EAF1FB; border-radius: 0 0 5px 5px; }
+#mainmenu a { display: inline-block; padding: 0 10px; font: bold 16px/40px Arial; text-decoration: none; }
+/* HEADER */
+
+/* FORM */
+.formrow { margin-bottom: 20px; }
+.formrow .name { margin-bottom: 5px; font: bold 16px Arial; color: #595959; }
+.formrow .input {  }
+.formrow .input input[type=text] { width: 500px; height: 25px; padding: 3px 10px; font: 14px Arial; border-radius: 4px; }
+.formrow .input textarea { width: 500px; height: 150px; padding: 3px 10px; font: 14px Arial; border-radius: 4px; }
+.formrow .input input[type=text]:focus, .formrow .input textarea:focus { border-color: #20DFAC; box-shadow: 0 0 3px #20DFAC; }
+.formrow .input img { width: 200px; }
+/* FORM */
+
+/* LIST1 */
+.list1 { width: 100%; border-collapse: collapse; border: 1px solid #DEDEDE; }
+.list1 td { padding: 5px 10px; border: 1px solid #DEDEDE; }
+.list1 tr:nth-child(2n) td { background: #E9E9E9; }
+.list1 td a { color: #595F99; text-decoration: none; font: 14px Arial; }
+.list1 td a:hover { color: #A87A2F; text-decoration: underline; }
+/* LIST1 */
+
+/* FOOTER */
+#footer { height: 100px; }
+/* FOOTER */
+
+/* ADMIN AUTH */
+#admin_auth { width: 320px; margin: 0 auto; padding: 20px 40px; margin-top: 40px; border: 1px solid #CCCCCC; box-shadow: 0 0 3px rgba(0,0,0,0.5); border-radius: 10px; }
+#admin_auth input[type=text], #admin_auth input[type=password] { width: 310px; }
+#admin_auth .error { margin-bottom: 10px; padding: 5px 10px; background: #C90101; color: #FFFFFF; border-radius: 5px; }
+/* ADMIN AUTH */
+
+/* OTHER */
+.butts { margin-bottom: 10px; }
+
+.imagestore { width: 200px; margin-bottom: 10px; position: relative; }
+.imagestore img { max-width: 200px; }
+.imagestore .del { position: absolute; right: 2px; top: 0; color: #FFFFFF; text-shadow: 0 0 3px #FF0000; font: bold 20px/20px Arial; cursor: pointer; }
+/* OTHER */

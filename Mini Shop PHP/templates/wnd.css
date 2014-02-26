@@ -1,0 +1,75 @@
+/* COMMON */
+html { }
+body { margin: 0px; padding: 0; position: relative; font: 12px Verdana; color: #000000; background: #FFFFFF; }
+td { font-size: 12px; }                                                                                     
+p, form { margin: 0px; padding: 0px; }
+h1 { padding: 0px; margin: 0px; font: bold 18px Arial; color: #000000; }
+h2 { padding: 0px; margin: 0px; font: bold 16px Arial; color: #000000; }
+select, option, input, textarea, button { font-size: 12px; font-family: Arial; vertical-align: middle; position: relative; color: #000000; }
+input:focus, textarea:focus { outline: none; }
+input[type="text"], input[type="password"], textarea { width: 100%; padding: 3px; border: 1px solid #D7D7D7; border-radius: 2px; }
+a { color: #033F7B; text-decoration: underline; }
+a:active { color: #FF9711; }
+a:hover { color: #FF9711; }
+img { border: 0px; vertical-align: middle; }
+ul { margin: 10px 0px; padding: 0px 0px 0px 14px; }
+ul li { margin: 0px 0px 3px 0px; padding: 0px; }
+label { cursor: pointer; }
+
+.clear { clear: both; font-size: 0px; height: 0px; }
+
+#page { overflow: hidden; }
+#content { height: 460px; overflow: auto; }
+#header { height: 30px; }
+#header .close { position: absolute; right: 5px; top: 3px; }
+#inner { padding: 20px; }
+
+.how { text-align: center; }
+.how input { display: inline-block; vertical-align: middle; width: 25px; margin: 0 5px; text-align: center; }
+.inputs { margin: 20px 0; }
+
+.text1 { margin-bottom: 10px; }
+.text2 { margin: 10px 0; }
+.text3 { margin-top: 10px; }
+.storename { margin-bottom: 10px; font: 20px Arial; text-align: center; color: #B22222; }
+
+.storeadditem { height: 200px; border-radius: 8px; }
+.storeadditem .name { height: 34px; overflow: hidden; margin-bottom: 5px; text-align: center; font: bold 14px Georgia; }
+.storeadditem .icon { height: 130px; margin-bottom: 5px; text-align: center; }
+.storeadditem .price { text-align: center; font: 14px Georgia; color: #B20101; }
+.storeadditem.active { box-shadow: 0 0 2px 4px #10BEB6; }
+
+.all_price { margin: 10px 0; text-align: center; font: bold 16px Arial; }
+/* COMMON */
+
+/* BUTTONS */
+.butt { display: inline-block; vertical-align: middle; height: 25px; padding: 0 10px; font: 16px/25px Georgia; color: #FFFFFF; cursor: pointer; border-radius: 4px; border: 1px solid #ff7f04;
+    background: #ffb76b; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76b), color-stop(50%,#ffa73d), color-stop(51%,#ff7c00), color-stop(100%,#ff7f04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+}
+.butt:hover {
+    background: #ff7f04; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff7f04 0%, #ff7c00 49%, #ffa73d 50%, #ffb76b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7f04), color-stop(49%,#ff7c00), color-stop(50%,#ffa73d), color-stop(100%,#ffb76b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ff7f04 0%,#ff7c00 49%,#ffa73d 50%,#ffb76b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ff7f04 0%,#ff7c00 49%,#ffa73d 50%,#ffb76b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ff7f04 0%,#ff7c00 49%,#ffa73d 50%,#ffb76b 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ff7f04 0%,#ff7c00 49%,#ffa73d 50%,#ffb76b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7f04', endColorstr='#ffb76b',GradientType=0 ); /* IE6-9 */
+}
+/* BUTTONS */
+
+/* STOREAPENDIX */
+.storeapendix { padding: 0 20px; }
+.storeapendix .name { margin-bottom: 25px; font: bold 22px Arial; text-align: center; color: #B22222; }
+.storeapendix .price { margin-bottom: 25px; font: 18px Georgia; text-align: center; }
+.storeapendix .price .new { color: #B20101; }
+.storeapendix .buycont { margin-top: 10px; text-align: center; }
+.storeapendix .description { margin-top: 20px; }
+/* STOREAPENDIX */

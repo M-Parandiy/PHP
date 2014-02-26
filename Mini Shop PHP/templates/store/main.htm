@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>{SEO_TITLE}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="{SEO_DESCRIPTION}" />
+<meta name="keywords" content="{SEO_KEYWORDS}" />
+<link href="{SITEURL}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="{SITEURL}/templates/wnd.css" type="text/css" />
+<link rel="stylesheet" href="{SITEURL}/templates/flexslider.css" type="text/css" />
+<script type="text/javascript" src="{SITEURL}/templates/jquery.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/javascripts.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div id="page">
+    <div id="header"><span class="close" onclick="window.parent.cw.close();">x</span></div>
+    <div id="content">
+        <div class="storeapendix">
+            <div class="row-fluid">
+                <div class="span6">
+                <div class="slidercontainer">
+                    <div class="flexslider">
+                        <ul class="slides">
+        				    {IMAGES}
+        				</ul>
+                    </div>
+                </div>
+                </div>
+                <div class="span6">
+                    <h1 class="name">{STORENAME}</h1>
+                    {PRICEOFFER}
+                    <div class="description row-fluid">
+                        <div class="span12">{DESCRIPTION}</div>
+                    </div>
+                    <div class="buycont"><span class="butt" onclick="window.parent.buywindow({ID})">Купить</span></div>
+                    <div style="margin: 5px 0;">{DELIVERYINFO}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="{SITEURL}/bootstrap/js/bootstrap.min.js"></script>
+<script>
+jQuery(document).ready(function()
+{
+	//Слайдер
+	jQuery('.flexslider').flexslider({
+        animation: "fade",
+        slideshow: "true",
+        directionNav: true,
+        slideshowSpeed: 2000,
+        animationSpeed: 1000
+    });
+});
+</script>
+</body>
+</html>

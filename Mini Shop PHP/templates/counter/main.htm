@@ -1,0 +1,52 @@
+<!-- Countdown dashboard start -->
+    <div class="row-fluid" id="counter">
+        <div class="span6">
+            <div class="heading">Супер скидка до 70%</div>
+        </div>
+        <div class="span6">
+            <div class="ttl">До окончания акции осталось</div>
+    		<div id="countdown_dashboard">
+    
+    			<div class="dash days_dash">
+    				<span class="dash_title">Дней</span>
+    				<div class="digit">0</div>
+    				<div class="digit">0</div>
+    			</div>
+    
+    			<div class="dash hours_dash">
+    				<span class="dash_title">Часов</span>
+    				<div class="digit">0</div>
+    				<div class="digit">0</div>
+    			</div>
+    
+    			<div class="dash minutes_dash">
+    				<span class="dash_title">Мин</span>
+    				<div class="digit">0</div>
+    				<div class="digit">0</div>
+    			</div>
+    
+    			<div class="dash seconds_dash">
+    				<span class="dash_title">Сек</span>
+    				<div class="digit">0</div>
+    				<div class="digit">0</div>
+    			</div>
+    
+    		</div>
+        </div>
+        </div>
+		<!-- Countdown dashboard end -->
+        <script type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		{DAYS},
+						'month': 	{MONTH},
+						'year': 	{YEAR},
+						'hour': 	{HOURS},
+						'min': 		{MINUTES},
+						'sec': 		{SECONDS}
+					},
+                    omitWeeks: true
+				});
+			});
+		</script>

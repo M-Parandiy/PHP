@@ -1,0 +1,34 @@
+<form method="post">
+    <div class="formrow">
+        <div class="name">Включен</div>
+        <div class="input">
+            <input type="checkbox" name="status" value="1" {CHECK} />
+        </div>
+    </div>
+    <div class="formrow">
+        <div class="name">Дни</div>
+        <div class="input"><input type="text" name="days" value="{DAYS}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Месяцы</div>
+        <div class="input"><input type="text" name="month" value="{MONTH}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Годы</div>
+        <div class="input"><input type="text" name="years" value="{YEARS}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Часы</div>
+        <div class="input"><input type="text" name="hours" value="{HOURS}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Минуты</div>
+        <div class="input"><input type="text" name="minutes" value="{MINUTES}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Секунды</div>
+        <div class="input"><input type="text" name="seconds" value="{SECONDS}" /></div>
+    </div>
+    <input type="hidden" name="action" value="save" />
+    <input type="submit" value="Отправить" />
+</form>

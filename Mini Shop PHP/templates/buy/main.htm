@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>{TITLE}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<link href="{SITEURL}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="{SITEURL}/templates/wnd.css" type="text/css" />
+<script type="text/javascript" src="{SITEURL}/templates/jquery.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/javascripts.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div id="page">
+    <div id="header"><span class="close" onclick="window.parent.cw.close();">x</span></div>
+    <div id="content">
+    <form name="orderform" method="post">
+        <div id="inner">
+        <div class="text1 row-fluid">
+            <div class="span12">{TEXT1BUY}</div>
+        </div>
+        <div class="row-fluid">
+            <div class="span5"><img src="{SITEURL}/files/store-{ID}.jpg" alt="" /></div>
+            <div class="span7">
+                <div class="storename">{STORENAME}</div>
+                <div class="row-fluid">
+                    <div class="span5">{PRICEOFFER}</div>
+                    <div class="how span4">
+                        Количество
+                        <div style="margin-top: 10px;"><span class="butt" onclick="DecOne(); CountTotal();">-</span><input id="store_how" class="how" type="text" name="how" value="1" onchange="CountTotal();" /><span class="butt" onclick="AddOne(); CountTotal();">+</span></div>
+                    </div>
+                    <div class="span3">
+                        Стоимость
+                        <div style="margin-top: 10px;"><span id="total_prod"></span> {CURR}</div>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="row-fluid">
+                        <div class="span5">Фамилия, Имя, Отчество</div>
+                        <div class="span7"><input type="text" name="fio" id="buyer_fio" value="" /></div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span5">Телефон</div>
+                        <div class="span7"><input type="text" name="phone" id="buyer_phone" value="" /></div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span5">E-mail</div>
+                        <div class="span7"><input type="text" name="email" value="" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text2 row-fluid">
+            <div class="span12">{TEXT2BUY}</div>
+        </div>
+        <div class="row-fluid">
+            {ADD}
+        </div>
+        <div class="row-fluid text3">
+            <div class="span12">{TEXT3BUY}</div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12 all_price">Итого: <span id="itogo"></span> {CURR}</div>
+        </div>
+        <input type="hidden" name="action" value="buy" />
+        <div class="row-fluid">
+            <div class="span12" style="text-align: center;"><span class="butt" onclick="SendOrder();">Заказать</span></div>
+        </div>
+    </form>
+    </div>
+    </div>
+</div>
+<script> CountTotal(); </script>
+<script src="{SITEURL}/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

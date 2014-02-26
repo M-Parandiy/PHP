@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>{SEO_TITLE}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="index,follow" />
+<meta name="description" content="{SEO_DESCRIPTION}" />
+<meta name="keywords" content="{SEO_KEYWORDS}" />
+<link href="{SITEURL}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" href="{SITEURL}/templates/style.css" type="text/css" />
+<link rel="stylesheet" href="{SITEURL}/templates/main.css" type="text/css" />
+<link rel="stylesheet" href="{SITEURL}/templates/customwnd/customwnd.css" type="text/css" />
+<script type="text/javascript" src="{SITEURL}/templates/jquery.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/customwnd/customwnd.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/jquery.lwtCountdown-1.0.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/misc.js"></script>
+<script type="text/javascript" src="{SITEURL}/templates/javascripts.js" charset="utf-8"></script>
+<script>
+    cw.dimmingOpacity = 0.5;
+    
+    cw.afterClose = function()
+    {
+        history.pushState('', document.title, window.location.pathname);
+        return false;
+    }
+</script>
+</head>
+<body>
+
+<div id="page">
+	<header id="header" class="row-fluid">
+		<div class="sitetitle span4"><div class="inner"><div><a href="{SITEURL}">{SITENAME}</a></div></div></div>
+        <div class="headicon span4">{TEXTINHEADER}</div>
+        <div class="phone span4">
+            <span class="phonetitle">Есть вопросы? Звоните!</span><br />
+            <span class="num">{ADMINPHONE}</span>
+            <a class="butt" href="#show_callback">Заказать консультацию</a>
+        </div>
+	</header>
+    <div id="content">
+        <div class="row-fluid">{CONTENT}</div>
+    </div>
+	<div id="footspacer"></div>
+</div>
+<footer id="footer">
+    <div class="row-fluid bar1">
+        <div class="span8">
+            <div class="moneys">
+                <a href="http://www.payanyway.ru/" rel="nofollow"><img src="{SITEURL}/images/pnv.png" alt="" /></a>
+            </div>
+        </div>
+        <div class="span4">
+            <div class="textfooter">{TEXTFOOTER}</div>
+            <div style="text-align: center;">
+                <div class="phone">{ADMINPHONE}</div>
+                <a class="butt" href="#show_callback">Заказать консультацию</a>
+            </div>
+        </div>
+    </div>
+	{PAGES}
+</footer>
+
+<script src="{SITEURL}/bootstrap/js/bootstrap.min.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter23585971 = new Ya.Metrika({id:23585971,
+webvisor:true,
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true});
+} catch(e) { }
+});
+
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/23585971" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

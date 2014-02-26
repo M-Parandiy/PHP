@@ -1,0 +1,13 @@
+.customwnd {  }
+.customwnd iframe { border: 0px none; overflow: auto; }
+
+.customwnd .customwnd_content { padding: 0px; background: #FFFFFF; margin: 2px; border: 1px solid #DFDFDF; }
+.customwnd .customwnd_title { position: relative; padding-bottom: 4px; font: bold 14px 'Arial', sans-serif; text-transform: uppercase; color: #7DBF37; border-bottom: 1px dotted #999999; }
+.customwnd .customwnd_body { position: relative; }
+.customwnd .customwnd_footer { padding-top: 7px; position: relative; font: 14px Arial; text-align: center; color: #00B050; }
+.customwnd .customwnd_footer a { color: #00B050; text-decoration: underline; }
+.customwnd .customwnd_footer a:hover { text-decoration: none; }
+.customwnd .customwnd_close { display: block; position: absolute; right: -15px; top: -18px; width: 30px; height: 30px; background: url('images/pwclose.png'); cursor: pointer; }
+.customwnd .customwnd_close:hover {  }
+
+.customwnd-preloader { background: #FFFFFF url('images/preloader.gif') no-repeat 4px 4px; padding: 4px 4px 4px 24px; color: #000000; font-family: Arial; font-size: 12px; font-weight: normal; }

@@ -1,0 +1,28 @@
+<form method="post" enctype="multipart/form-data">
+    <div class="formrow">
+        <div class="name">Название</div>
+        <div class="input"><input type="text" name="name" value="{PAGENAME}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">Описание</div>
+        <div class="input"><textarea name="descr">{PAGEDESCR}</textarea></div>
+    </div>
+    <div class="formrow">
+        <div class="name">SEO Title</div>
+        <div class="input"><input type="text" name="seotitle" value="{SEOTITLE}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">SEO Keywords</div>
+        <div class="input"><input type="text" name="seokeywords" value="{SEOKEYWORDS}" /></div>
+    </div>
+    <div class="formrow">
+        <div class="name">SEO Description</div>
+        <div class="input"><textarea name="seodescription">{SEODESCRIPTION}</textarea></div>
+    </div>
+    <input type="hidden" name="action" value="{ACTION}" />
+    <div class="sbm"><input type="submit" value="Отправить" /></div>
+</form>
+<script type="text/javascript">
+var editor = CKEDITOR.replace('descr');
+AjexFileManager.init({returnTo: 'ckeditor', editor: editor});
+</script>
